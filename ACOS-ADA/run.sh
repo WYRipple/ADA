@@ -1,0 +1,18 @@
+CUDA_VISIBLE_DEVICES=0 nohup python -u ./main.py --task asqp \
+            --dataset laptop-acos \
+            --model_name_or_path /t5-base \
+            --n_gpu 0 \
+            --do_train \
+            --do_direct_eval \
+            --train_batch_size 10 \
+            --gradient_accumulation_steps 1 \
+            --eval_batch_size 10 \
+            --learning_rate 3e-4 \
+            --max_seq_length 700 \
+            --save_name laptop \
+            --dataset_name laptop \
+            --use_category_prompt 1 \
+            --use_new_target 1 \
+            --caculate_pattern 1 \
+            --caculate_cate 1 \
+            --num_train_epochs 20 > laptop.log 2>&1 &
