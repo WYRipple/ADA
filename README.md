@@ -1,5 +1,5 @@
 # ADA
-Pytorch code for ICASSP 2023 accepted paper "Adaptive Data Augmentation For Aspect Sentiment Quad Prediction"
+Pytorch code for ICASSP 2024 accepted paper "Adaptive Data Augmentation For Aspect Sentiment Quad Prediction"
 ### Requirments
 * python 3.7.6
 * pytorch 1.11.0 + cuda 11.3
